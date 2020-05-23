@@ -35,7 +35,7 @@
           this.y = event.clientY;
         },
         parar(e){
-          e.stopPropagation(); /** PARA O EVENTO NA TAG FILHA */
+          e.stopPropagation(); /** PARA O EVENTO NA TAG FILHA ou colocar v-on:mousemove.stop */
         }
       }
     });
