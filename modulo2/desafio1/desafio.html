@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Desafio 1</title>
+</head>
+<body>
+  <div id="desafio">
+    <!-- INTERPOLAR NOME E IDADE -->
+    <p>{{ name() }}</p>
+
+    <!-- EXIBIR MINHA IDADE MULTIPLICADA POR 3 -->
+    <p>{{idadex3(21)}}</p>
+
+    <!-- CHAMAR A FUNÇÃO PARA EXIBIR NUMERO RANDOMICO ENTRE 0 E 1 {MATH.RANDOM()} -->
+    <p>
+      {{random()}}
+    </p>
+
+    <!-- PROCURAR IMAGEM NO GOOGLE E EXIBIR NA TAG IMG -->
+    <p>
+      <img v-bind:src="imggoogle" height="400">
+    </p>
+
+    <!-- INICIALIZAR UM INPUT COM MEU NOME COM O INPUT VALUE -->
+    <p>
+      <input type="text" v-bind:value="name()">
+    </p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
