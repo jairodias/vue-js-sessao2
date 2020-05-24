@@ -9,6 +9,8 @@
 <body>
   <div id="app">
     <button v-on:click="somar(5)">Somar 1</button>
+    <p>{{contador * 2}}</p>
+    <p>{{contador > 5 ? 'Maior que 10 o resultado da expressão' : 'Não é maior que 10 o resultado'}}</p>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
