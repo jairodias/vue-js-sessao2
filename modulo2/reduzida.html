@@ -1,0 +1,21 @@
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app">
+  <button v-on:click="aumentar">Aumentar</button>
+  <p> Resultado: {{aumentar()}}</p>
+</div>
+
+<script>
+  new Vue({
+    el: '#app',
+    data:{
+      contador: 0,
+    },
+    methods:{
+      aumentar(){
+        this.contador++;
+      },
+    }
+  })
+</script>
+
