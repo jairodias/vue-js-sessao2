@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Propriedades reativas</title>
+</head>
+<body>
+  <div id="app">
+    <p>{{ titulo }}</p>
+    <input type="text" v-model="titulo">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- v-model: sincronia de dados do paragrafo para o input e vice versa -->
+  <script>
+    new Vue({
+      el: '#app',
+      data:{
+        titulo: 'Usando VueJs'
+      }
+      
+    })
+  </script>
+</body>
+</html>
