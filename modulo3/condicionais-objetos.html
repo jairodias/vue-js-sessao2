@@ -7,7 +7,10 @@
     </ul>
     <hr>
     <li v-for="pessoa in pessoas">
-      {{pessoa.nome}}
+      <div v-for="(valor, key) in pessoa">
+        {{key}} = {{ valor }}
+      </div>
+      
     </li>
 </div>
 
@@ -24,3 +27,9 @@
     }
   })
 </script>
+
+<style>
+  li{
+    list-style: none;
+  }
+</style>
