@@ -3,8 +3,9 @@
 
 <div id="app">
     <ul>
-      <li v-for="(cor, i) in cores">{{cor}} - {{ i }}</li>
+      <li v-for="(cor, i) in cores" :key="cor">{{cor}} - {{ i }}</li>
     </ul>
+    <button @click="cores.push('white')"> Adicionar </button>
     <hr>
     <li v-for="pessoa in pessoas">
       <div v-for="(valor, key) in pessoa">
